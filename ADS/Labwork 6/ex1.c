@@ -43,15 +43,15 @@ int* rand_int(int n)    //array of size n with random numbers from 0-99
 {
     int* rand_arr = (int*)malloc(sizeof(int)*n);
     for(int i = 0; i<n; i++){
-        rand_arr[i] = rand()%101;
+        rand_arr[i] = rand()%100;
     }
     return rand_arr;
 }
 
 int INT_SIZE;   //size of int array
 int* lvs_arr(int* int_arr){   //create leaves array from int array
-    int depth = ceil(log2(INT_SIZE) + 1);  //length of leaves array
-    int lvs_num = pow(2,depth - 1);
+    int depth = ceil(log2(INT_SIZE) + 1);  
+    int lvs_num = pow(2,depth - 1); //length of leaves array
 
     int* temp = (int*)malloc(sizeof(int) * lvs_num);
 
