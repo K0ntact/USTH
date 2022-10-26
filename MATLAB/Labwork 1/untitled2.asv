@@ -1,0 +1,6 @@
+%%Matrix
+%%Exercise 1
+%part a
+a = [0 0 0; 0 0 0; 0 0 0];
+disp(a)
+
